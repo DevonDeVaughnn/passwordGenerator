@@ -27,7 +27,7 @@ letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n",
 var param;
 
 //For uppercase conversion
-spaace=[];
+space=[];
 
 //Converts letters to uppercase
 var makeUpper = function (a){
@@ -64,7 +64,7 @@ function generatePassword(){
   };
   // If statements for the parameters (found .concat through google-fu, changed my life)
   if (!conSpec && !conNum && !conUp && !conLow) {
-    choices = alert("You must choose a criteria!");
+    param = alert("You must choose a criteria!");
   }
 
   else if(conSpec && conNum && conLow && conUp){
@@ -100,7 +100,7 @@ function generatePassword(){
     param = bigLett.concat(letters)
   }
   else if(conUp && conNum){
-    aram = bigLett.concat(number)
+    param = bigLett.concat(number)
   }
   else if(conLow && conNum){
     param = letter.concat(number)
