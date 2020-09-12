@@ -64,34 +64,65 @@ function generatePassword(){
   };
   // If statements for the parameters (found .concat through google-fu, changed my life)
   if (!conSpec && !conNum && !conUp && !conLow) {
-    choices = alert("You must choose a criteria!");}
+    choices = alert("You must choose a criteria!");
+  }
 
-  else if(conSpec && conNum && conLow && conUp){param = specChar.concat(number, letters, bigLett);}
+  else if(conSpec && conNum && conLow && conUp){
+    param = specChar.concat(number, letters, bigLett);
+  }
 
   //For 3 choices
-  else if(conSpec &&conNum && conLow){param = specChar.concat(number, letters)}
-  else if(conSpec && conLow && conUp){param = specChar.concat(letters, bigLett)}
-  else if(conSpec &&conNum && conUp){param = specChar.concat(number, bigLett)}
-  else if(conNum && conLow && conUp ){param = number.concat(letters, bigLett)}
+  else if(conSpec &&conNum && conLow){
+    param = specChar.concat(number, letters)
+  }
+  else if(conSpec && conLow && conUp){
+    param = specChar.concat(letters, bigLett)
+  }
+  else if(conSpec &&conNum && conUp){
+    param = specChar.concat(number, bigLett)
+  }
+  else if(conNum && conLow && conUp ){
+    param = number.concat(letters, bigLett)
+  }
 
   
   //For 2 choices  
-  else if(conSpec && conNum){param = specChar.concat(number)}
-  else if(conSpec && conUp){param = specChar.concat(bigLett)}
-  else if(conSpec && conLow){param = specChar.concat(letters)}
-  else if(conUp && conLow){param = bigLett.concat(letters)}
-  else if(conUp && conNum){param = bigLett.concat(number)}
-  else if(conLow && conNum){param = letter.concat(number)}
+  else if(conSpec && conNum){
+    param = specChar.concat(number)
+  }
+  else if(conSpec && conUp){
+    param = specChar.concat(bigLett)
+  }
+  else if(conSpec && conLow){
+    param = specChar.concat(letters)
+  }
+  else if(conUp && conLow){
+    param = bigLett.concat(letters)
+  }
+  else if(conUp && conNum){
+    aram = bigLett.concat(number)
+  }
+  else if(conLow && conNum){
+    param = letter.concat(number)
+  }
 
   //For 1 choice
-  else if(conLow){param = letters;}
-  else if(conNum){param = number;}
-  else if(conUp){param = bigLett;}
-  else if(conSpec){param = specChar;}
+  else if(conLow){
+    param = letters;
+  }
+  else if(conNum){
+    param = number;
+  }
+  else if(conUp){
+    param = bigLett;
+  }
+  else if(conSpec){
+    param = specChar;
+  }
 
 
 // space variable to fill uppercase conversion
-  else if (confirmUppercase) {
+  else if (conUp) {
     param = space.concat(bigLett);
 };
 
