@@ -1,4 +1,4 @@
-# passwordGenerator-Sudu
+# passwordGenerator
 This is a password generator.
 It generates any combination of: Upper, Lower, Special and numerical characters, this is all dependent on the user.
 Choose the length of the password.
